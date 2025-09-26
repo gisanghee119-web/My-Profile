@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>윤기훈 · 포트폴리오 이력서</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2563eb'
+            },
+            fontFamily: {
+              sans: ['Pretendard','ui-sans-serif','system-ui']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100">
+    <header class="site-header">
+      <div class="container header-inner flex items-center justify-between">
+        <h1 class="name text-2xl font-semibold">윤기훈 <span class="en">(Gihun Yun)</span></h1>
+        <div class="flex items-center gap-2">
+          <button class="print-btn hover:bg-slate-50" onclick="window.print()" aria-label="Print">🖨️</button>
+          <button id="themeToggle" class="print-btn hover:bg-slate-50" type="button" aria-label="Toggle dark mode">🌓</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card basic-info">
+        <div class="avatar">
+          <img src="my-notion-face-transparent.png" alt="윤기훈 프로필 이미지" />
+        </div>
+        <div class="info-grid">
+          <div class="info-row"><span class="label">성명</span><span class="value">윤기훈</span></div>
+          <div class="info-row"><span class="label">학력</span><span class="value">국립한밭대학교 기계공학과 3학년 재학</span></div>
+          <div class="info-row"><span class="label">연락처</span><span class="value">010-9484-2454</span></div>
+          <div class="info-row"><span class="label">이메일</span><span class="value">20237058@edu.hanbat.ac.kr</span></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>전공 프로젝트</h2></div>
+        <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+          <div class="project-card hover:shadow-lg transition-shadow">
+            <h3>이차전지를 이용한 발명품 프로젝트</h3>
+            <p>이차전지 응용 아이디어를 구체화하여 프로토타입·보고서 기반으로 본선 진출 및 입상</p>
+            <div class="chip text-xs">학기 프로젝트 · 팀원 6명</div>
+            <p class="meta">역할: 팀장 (총괄 기획 및 보고서 작성, 최종 발표)</p>
+            <p class="meta">성과: 예선 보고서 심사 통과, 본선 최종 발표로 입상</p>
+          </div>
+          <div class="project-card hover:shadow-lg transition-shadow">
+            <h3>3D 디지털 제조 과목 프로젝트</h3>
+            <p>디지털 제조 공정 학습과 팀 협업으로 제품 설계·제작, 중간·최종 발표 수행</p>
+            <div class="chip text-xs">학기 프로젝트 · 팀원 6명</div>
+            <p class="meta">역할: 팀장 (총괄 기획, 최종 발표)</p>
+            <p class="meta">성과: 중간 발표 성공, 최종 발표 준비 및 보완</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="card">
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+        <p class="summary-text">
+          저는 기계공학과 전공 지식을 바탕으로 <strong>생산 및 설비 관리 분야</strong>에 관심을 두고 있으며, 약 2년간의 현장 근무 경험과 다양한 자격증을 통해 <strong>실무 적응력</strong>과 <strong>문제 해결 능력</strong>을 보유하고 있습니다. 교내외 프로젝트와 공모전에서 팀장으로서 경험을 쌓으며 <strong>리더십</strong>과 <strong>협업 능력</strong>을 키웠고, 이러한 경험을 기반으로 조직과 함께 성장하는 엔지니어를 목표로 합니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>1. 학력 사항 (Education)</h2></div>
+        <ul class="bullet">
+          <li><strong>국립한밭대학교</strong> (대전)
+            <ul>
+              <li>학과: 기계공학과</li>
+              <li>학년: 3학년 (재학 중)</li>
+              <li>전공 강점: 설계 프로그램(2D AutoCAD, 3D Inventor, CATIA 등) 모델링</li>
+              <li>목표: 4학년 캡스톤 디자인 프로젝트로 대회 입상</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>2. 교내 활동 / 학회 경험</h2></div>
+        <ul class="bullet">
+          <li><strong>봉사 동아리 조장</strong> – 팀을 이끌며 운영 및 조직 관리 경험 습득</li>
+          <li><strong>후배 멘토링</strong> – 취업 관련 조언 및 고민 상담 진행</li>
+          <li><strong>팀 프로젝트 갈등 해결 경험</strong> – 이차 전지 관련 대회 준비 과정에서 참여 의지가 부족한 팀원들을 정리하고, 참여 의지가 있는 팀원을 중심으로 팀을 재구성하여 프로젝트 성공적으로 진행</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>3. 대외 활동 / 공모전</h2></div>
+        <ul class="bullet">
+          <li><strong>이차 전지를 활용한 발명품 대회 – 입상</strong>
+            <ul>
+              <li>역할: 팀장 (팀원 관리, 보고서 작성, 최종 발표 담당)</li>
+              <li>성과: 창의적인 아이디어로 입상 달성</li>
+              <li>연계성: 관리직 진출 시 필요한 리더십과 발표 능력 함양</li>
+            </ul>
+          </li>
+          <li><strong>이차 전지를 활용한 창업 아이템 대회 – 입상</strong>
+            <ul>
+              <li>역할: 팀장 (팀원 관리, 보고서 작성, 최종 발표 담당)</li>
+              <li>성과: 창의적인 아이디어로 입상 달성</li>
+              <li>연계성: 관리직 진출 시 필요한 리더십과 발표 능력 함양</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>4. 인턴십 / 현장 경험</h2></div>
+        <ul class="bullet">
+          <li><strong>생산직 오퍼레이터 근무 (약 2년)</strong>
+            <ul>
+              <li>주요 업무: 공정 관리, 기계 정비, 신규 직원 교육</li>
+              <li>성과:
+                <ul>
+                  <li>초반 1년간 부사수로 경험 축적</li>
+                  <li>이후 1년간 사수로서 부사수 교육 담당</li>
+                </ul>
+              </li>
+              <li>진로 연계: 생산·설비 관리 직무 수행 시 현장 경험을 바탕으로 빠른 적응 가능</li>
+            </ul>
+          </li>
+          <li><strong>암벽 등반 안전 요원 근무 (약 1년)</strong>
+            <ul>
+              <li>주요 업무: 안전 장비(하네스, 안전모 등) 관리, 장비 착용 안내 및 시범</li>
+              <li>성과: 체험 학생들에게 안전한 교육과 긍정적 경험 제공</li>
+              <li>진로 연계: 강인한 체력과 안전 의식으로 안전 관리직과의 높은 연관성</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>5. 보유 역량 / 자격증</h2></div>
+        <div class="grid two">
+          <div>
+            <h3>자격증</h3>
+            <ul class="bullet">
+              <li>설비보전산업기사</li>
+              <li>전기기능사</li>
+              <li>3D 프린터 운용기능사</li>
+              <li>컴퓨터활용능력 2급</li>
+              <li>지게차운전기능사</li>
+              <li>굴착기운전기능사</li>
+              <li>천장크레인운전기능사</li>
+              <li>로더운전기능사</li>
+            </ul>
+          </div>
+          <div>
+            <h3>전문 스킬 및 강점</h3>
+            <ul class="bullet">
+              <li>CAD/3D 설계 및 디지털 제조 기술</li>
+              <li>공정 관리 및 설비 유지보수 능력</li>
+              <li>실무 현장 경험 기반의 빠른 적응력</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>6. 전공 프로젝트 경험</h2></div>
+        <ul class="bullet">
+          <li><strong>이차전지를 이용한 발명품 프로젝트 (팀원 6명, 1학기 진행)</strong>
+            <ul>
+              <li>역할: 팀장 (총괄 기획 및 보고서 작성, 최종 발표 담당)</li>
+              <li>성과:
+                <ul>
+                  <li>보고서를 통해 1차 예선 심사 통과</li>
+                  <li>본선에서 직접 최종 발표를 통해 입상</li>
+                </ul>
+              </li>
+              <li>배운 점: 리더십 역량 강화, 협업 능력 및 문제 해결 능력 향상</li>
+            </ul>
+          </li>
+          <li><strong>3D 디지털 제조 과목 프로젝트 (팀원 6명, 1학기 진행)</strong>
+            <ul>
+              <li>역할: 팀장 (총괄 기획, 최종 발표 담당)</li>
+              <li>성과: 1차 중간 발표 성공적으로 수행, 최종 발표 준비 중 (부족한 부분 보완)</li>
+              <li>배운 점: 리더십 역량 강화, 협업 능력 및 문제 해결 능력 향상</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> 윤기훈. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const html = document.documentElement;
+      const storageKey = 'theme';
+      const saved = localStorage.getItem(storageKey);
+      if (saved === 'dark') { html.classList.add('dark'); }
+      document.getElementById('themeToggle').addEventListener('click', function() {
+        html.classList.toggle('dark');
+        localStorage.setItem(storageKey, html.classList.contains('dark') ? 'dark' : 'light');
+      });
+    </script>
+  </body>
+  </html>
+
+
